@@ -6,10 +6,16 @@ Kodda yapılacak değişiklik ile farklı diller arası çevri işlemide gereçe
 * Gereksinimler
 
 easyocr = 1.7.1
+
 transformers = 4.35.2
+
 cv2 = 4.8.1.78
+
 textwrap = 0.9.2 
+
 tqdm = 4.65.0
+
+
 
 * İnput:
 
