@@ -11,7 +11,7 @@ cv2 = 4.8.1.78
 textwrap = 0.9.2 
 tqdm = 4.65.0
 
-*input:
+* İnput:
 
 ![1](https://github.com/koesan/manga_cizgi_roman_ceviri/assets/96130124/d993c8e6-5ec7-4272-a58f-ed7a94dffaba)
 
@@ -20,7 +20,7 @@ tqdm = 4.65.0
 ![3](https://github.com/koesan/manga_cizgi_roman_ceviri/assets/96130124/c24e90e7-6887-4dab-821c-00383a948069)
 
 
-*output:
+* Output:
 
 ![1](https://github.com/koesan/manga_cizgi_roman_ceviri/assets/96130124/9fcbb3ef-2f0c-43d0-b529-164823f6856d)
 
