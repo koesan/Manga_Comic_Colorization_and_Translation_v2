@@ -5,15 +5,28 @@ Kodda yapılacak değişiklik ile farklı diller arası çevri işlemide gereçe
 
 * Gereksinimler
 
-easyocr = 1.7.1
+deepl==1.17.0
 
-transformers = 4.35.2
+opencv-python==4.6.0.66
 
-cv2 = 4.8.1.78
+paddleocr==2.7.3
 
-textwrap = 0.9.2 
+paddlepaddle==2.6.1
 
-tqdm = 4.65.0
+simple-lama-inpainting==0.1.2
+
+tensorflow==2.16.1
+
+torch==2.2.2
+
+torchvision==0.17.2
+
+tqdm==4.66.2
+
+textwrap3==0.9.2 
+
+transformers==4.35.2
+
 
 
 
