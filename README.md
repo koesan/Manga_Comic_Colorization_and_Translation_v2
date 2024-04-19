@@ -1,6 +1,25 @@
-Doğal dil işleme ve görüntü işleme yöntemlerini kullanarak manga veya çizgi romanları ingilizceden türkçeye çevirme.
+Yapay zeka kullanılarak farklı dillerdeki manga veya çizgi romanları herhangi bir dile çevirir ve renksiz mangaları renklendirir. 
 
 Kodda yapılacak değişiklik ile farklı diller arası çevri işlemide gereçekleştirilebilinir.
+
+* OCR
+
+Resimlerdeki metinleri çekmek için kullanılıyor. projede paddleocr kütüphanesini kullandım.
+paddleocr kütüphanesi diğer(easyocr, pytesserac) ocr kütüphanelerinden daha hızlı ve daha iyi sonuç verdiği için projede paddleocr kütüphaensini kullandım
+
+* Çevri 
+
+çevri için öncelikle transformırs kütüphanesi ile farklı dil modellerini çevri için kullanmayı planlıyordum. Testlerim sonucunda istediğim başarıda sonuç vermediği için deepl api kullanmaya karar verdim. 
+deepl api kullanmak için  https://www.deepl.com/en/pro-api sayfasından kaydolun ve anahtarınızı koda ekleyin.
+
+* İnpanting
+
+resme çevrilmiş metinleri eklemek için önce resim üzerindeki metinlerin kaldırılması gerekiyor. bunun için simple-lama-inpainting kütüphanesi ile metinlerin üzerine kareler yerleştirerek yapay zekanın kapalı kısımları doldurması sağlanıyor.
+
+* Renklendirme
+
+siyah veyaz resimleri renklendirmek için daha önce yapılmış bir projeden yararladnım
+
 
 
 * Gereksinimler
