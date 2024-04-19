@@ -10,7 +10,8 @@ paddleocr kütüphanesi diğer(easyocr, pytesserac) ocr kütüphanelerinden daha
 * Çevri 
 
 çevri için öncelikle transformırs kütüphanesi ile farklı dil modellerini çevri için kullanmayı planlıyordum. Testlerim sonucunda istediğim başarıda sonuç vermediği için deepl api kullanmaya karar verdim. 
-deepl api kullanmak için  https://www.deepl.com/en/pro-api sayfasından kaydolun ve anahtarınızı koda ekleyin.
+deepl api kullanmak için  https://www.deepl.com/en/pro-api sayfasından kaydolun ve anahtarınızı alın
+kodda 13. satırdaki api = "APİ-KEY" kısmına anahtarınızı ekleyin
 
 * İnpanting
 
@@ -18,7 +19,9 @@ resme çevrilmiş metinleri eklemek için önce resim üzerindeki metinlerin kal
 
 * Renklendirme
 
-siyah veyaz resimleri renklendirmek için daha önce yapılmış bir projeden yararladnım
+siyah veyaz resimleri renklendirmek için https://github.com/qweasdd/manga-colorization-v2 bu projeden yararladnım. bu projeyi kendi koduma uyarlıyarak renksiz resimleri renklendirdim.
+
+kodda 12. satırdaki renklendir = 1 ise reimleri renklendirir. renklendir = 0 ise resimleri renklendirmez.
 
 
 
