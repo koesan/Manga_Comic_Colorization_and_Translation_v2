@@ -1,6 +1,11 @@
+# Manga ve Çizgi Roman Çevirici ve Renklendirici
+
 Yapay zeka kullanılarak farklı dillerdeki manga veya çizgi romanları herhangi bir dile çevirir ve renksiz mangaları renklendirir. 
 
 Kodda yapılacak değişiklik ile farklı diller arası çevri işlemide gereçekleştirilebilinir.
+
+# ÖZELLİKLER
+
 
 * OCR
 
