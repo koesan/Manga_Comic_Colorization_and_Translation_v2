@@ -23,8 +23,7 @@ Resme çevrilmiş metinleri eklemek için önce resim üzerindeki metinlerin kal
 
 * Renklendirme
 
-siyah veyaz resimleri renklendirmek için https://github.com/qweasdd/manga-colorization-v2 bu projeden yararladnım. bu projeyi kendi koduma uyarlıyarak renksiz resimleri renklendirdim.
-
+siyah beyaz resimleri renklendirmek için https://github.com/qweasdd/manga-colorization-v2 projeden yararladnım. bu projeyi kendi koduma uyarlıyarak renksiz resimleri renklendirdim.
 kodda 12. satırdaki renklendir = 1 ise reimleri renklendirir. renklendir = 0 ise resimleri renklendirmez.
 
 
