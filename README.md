@@ -28,7 +28,7 @@ kodda 12. satırdaki renklendir = 1 ise reimleri renklendirir. renklendir = 0 is
 
 
 
-* Gereksinimler
+# Gereksinimler
 
 deepl==1.17.0
 
@@ -52,7 +52,7 @@ transformers==4.35.2
 
 
 
-* İnput:
+# İnput:
 
 ![1](https://github.com/koesan/manga_cizgi_roman_ceviri/assets/96130124/f729cc10-4a13-465b-9327-e766f5776625)
 
@@ -63,7 +63,7 @@ transformers==4.35.2
 
 
 
-* Output:
+# Output:
 
 ![1](https://github.com/koesan/manga_cizgi_roman_ceviri/assets/96130124/4ec53fd6-b182-4668-b7ab-3440b8e4446e)
 
