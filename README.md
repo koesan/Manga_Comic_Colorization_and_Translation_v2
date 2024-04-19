@@ -15,8 +15,6 @@ paddlepaddle==2.6.1
 
 simple-lama-inpainting==0.1.2
 
-tensorflow==2.16.1
-
 torch==2.2.2
 
 torchvision==0.17.2
@@ -28,24 +26,19 @@ textwrap3==0.9.2
 transformers==4.35.2
 
 
-
-
 * İnput:
 
-![1](https://github.com/koesan/manga_cizgi_roman_ceviri/assets/96130124/d993c8e6-5ec7-4272-a58f-ed7a94dffaba)
+![1](https://github.com/koesan/manga_cizgi_roman_ceviri/assets/96130124/f729cc10-4a13-465b-9327-e766f5776625)
 
-![2](https://github.com/koesan/manga_cizgi_roman_ceviri/assets/96130124/0ab3a475-2671-49dc-9860-f61710936155)
+![2](https://github.com/koesan/manga_cizgi_roman_ceviri/assets/96130124/bf31bd33-5af8-4563-9d94-67ad22351ef3)
 
-![3](https://github.com/koesan/manga_cizgi_roman_ceviri/assets/96130124/c24e90e7-6887-4dab-821c-00383a948069)
+![4](https://github.com/koesan/manga_cizgi_roman_ceviri/assets/96130124/5cd9b5a3-41b3-4ecf-ac2a-5254c6dfb949)
 
 
 * Output:
 
-![1](https://github.com/koesan/manga_cizgi_roman_ceviri/assets/96130124/9fcbb3ef-2f0c-43d0-b529-164823f6856d)
+![1](https://github.com/koesan/manga_cizgi_roman_ceviri/assets/96130124/4ec53fd6-b182-4668-b7ab-3440b8e4446e)
 
-![2](https://github.com/koesan/manga_cizgi_roman_ceviri/assets/96130124/eb42d8d4-5ac3-434c-bdbb-914082ad4b0f)
+![2](https://github.com/koesan/manga_cizgi_roman_ceviri/assets/96130124/4e4d36d3-37de-4bce-8d4b-1642b899db09)
 
-![3](https://github.com/koesan/manga_cizgi_roman_ceviri/assets/96130124/09eccf61-ac20-4116-b568-682b229531ca)
-
-
-
+![4](https://github.com/koesan/manga_cizgi_roman_ceviri/assets/96130124/3d9e217d-27a4-4af6-a915-15ed7c2fb7e6)
