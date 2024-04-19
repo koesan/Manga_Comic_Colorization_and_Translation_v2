@@ -26,6 +26,7 @@ textwrap3==0.9.2
 transformers==4.35.2
 
 
+
 * İnput:
 
 ![1](https://github.com/koesan/manga_cizgi_roman_ceviri/assets/96130124/f729cc10-4a13-465b-9327-e766f5776625)
@@ -33,6 +34,8 @@ transformers==4.35.2
 ![2](https://github.com/koesan/manga_cizgi_roman_ceviri/assets/96130124/bf31bd33-5af8-4563-9d94-67ad22351ef3)
 
 ![4](https://github.com/koesan/manga_cizgi_roman_ceviri/assets/96130124/5cd9b5a3-41b3-4ecf-ac2a-5254c6dfb949)
+
+
 
 
 * Output:
