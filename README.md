@@ -1,6 +1,6 @@
 # Manga ve Çizgi Roman Çevirici ve Renklendirici
 
-Yapay zeka kullanılarak farklı dillerdeki manga veya çizgi romanları herhangi bir dile çevirir ve renksiz mangaları renklendirir. 
+Bu proje, yapay zeka kullanarak farklı dillerdeki mangaları veya çizgi romanları herhangi bir dile çevirir ve renksiz mangaları renklendirir. Proje, çeşitli aşamalardan oluşmaktadır ve farklı işlevleri gerçekleştirmek için çeşitli kütüphaneleri kullanır.
 Kodda yapılacak değişiklik ile farklı diller arası çevri işlemide gereçekleştirilebilinir.
 
 # ÖZELLİKLER
@@ -8,18 +8,18 @@ Kodda yapılacak değişiklik ile farklı diller arası çevri işlemide gereçe
 
 * OCR
 
-Resimlerdeki metinleri çekmek için kullanılıyor. projede paddleocr kütüphanesini kullandım.
-paddleocr kütüphanesi diğer(easyocr, pytesserac) ocr kütüphanelerinden daha hızlı ve daha iyi sonuç verdiği için projede paddleocr kütüphaensini kullandım
+Resimlerdeki metinleri çıkarmak için OCR kullanılmaktadır. Bu projede PaddleOCR kütüphanesi tercih ettim. 
+Paddleocr kütüphanesi diğer ocr kütüphanelerinden (EasyOCR, Pytesseract) daha hızlı ve daha iyi sonuç verdiği için projede kullanmaya karar verdim.
 
 * Çevri 
 
-çevri için öncelikle transformırs kütüphanesi ile farklı dil modellerini çevri için kullanmayı planlıyordum. Testlerim sonucunda istediğim başarıda sonuç vermediği için deepl api kullanmaya karar verdim. 
-deepl api kullanmak için  https://www.deepl.com/en/pro-api sayfasından kaydolun ve anahtarınızı alın
-kodda 13. satırdaki api = "APİ-KEY" kısmına anahtarınızı ekleyin
+Çevri için öncelikle transformırs kütüphanesi ile farklı dil modellerini çevri için kullanmayı planlıyordum. Testlerim sonucunda istediğim başarıda sonuç vermediği için deepl api kullanmaya karar verdim. 
+Deepl api kullanmak için  https://www.deepl.com/en/pro-api sayfasından kaydolun ve anahtarınızı alın.
+Kodda 13. satırdaki api = "APİ-KEY" kısmına anahtarınızı ekleyin
 
 * İnpanting
 
-resme çevrilmiş metinleri eklemek için önce resim üzerindeki metinlerin kaldırılması gerekiyor. bunun için simple-lama-inpainting kütüphanesi ile metinlerin üzerine kareler yerleştirerek yapay zekanın kapalı kısımları doldurması sağlanıyor.
+Resme çevrilmiş metinleri eklemek için önce resim üzerindeki metinlerin kaldırılması gerekiyor. Bunun için simple-lama-inpainting kütüphanesi ile metinlerin üzerine kareler yerleştirerek yapay zekanın kapalı kısımları doldurması sağlanıyor.
 
 * Renklendirme
 
