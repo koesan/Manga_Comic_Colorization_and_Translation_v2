@@ -34,13 +34,11 @@ kodda 12. satırdaki renklendir = 1 ise reimleri renklendirir. renklendir = 0 is
 
 deepl==1.17.0
 
-opencv-python==4.6.0.66
-
 paddleocr==2.7.3
 
 paddlepaddle==2.6.1
 
-simple-lama-inpainting==0.1.2
+simple-lama-inpainting==0.1.0
 
 torch==2.2.2
 
