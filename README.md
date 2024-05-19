@@ -50,7 +50,7 @@ tqdm==4.66.2
 
 textwrap3==0.9.2 
 
-transformers==4.35.2
+pillow==9.5.0
 
 
 
