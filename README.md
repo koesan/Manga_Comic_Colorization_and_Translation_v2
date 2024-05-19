@@ -57,11 +57,11 @@ pillow==9.5.0
 
 # İnput:
 
-![1](https://github.com/koesan/manga_cizgi_roman_ceviri/assets/96130124/f729cc10-4a13-465b-9327-e766f5776625)
+![1](https://github.com/koesan/manga_cizgi_roman_ceviri/tree/main/resimler/1.jpg)
 
-![2](https://github.com/koesan/manga_cizgi_roman_ceviri/assets/96130124/bf31bd33-5af8-4563-9d94-67ad22351ef3)
+![2](https://github.com/koesan/manga_cizgi_roman_ceviri/tree/main/resimler/2.jpg)
 
-![3](file:///home/koesan/%C4%B0ndirilenler/manga_cizgi_roman_ceviri-main-20240416T084628Z-001/manga_cizgi_roman_ceviri-main/KBHu3LM.png)
+![3](https://github.com/koesan/manga_cizgi_roman_ceviri/tree/main/resimler/3.png)
 
 
 
@@ -69,8 +69,8 @@ pillow==9.5.0
 
 # Output:
 
-![1](https://github.com/koesan/manga_cizgi_roman_ceviri/assets/96130124/4ec53fd6-b182-4668-b7ab-3440b8e4446e)
+![1](https://github.com/koesan/manga_cizgi_roman_ceviri/tree/main/resimler/4.jpg)
 
-![2](https://github.com/koesan/manga_cizgi_roman_ceviri/assets/96130124/4e4d36d3-37de-4bce-8d4b-1642b899db09)
+![2](https://github.com/koesan/manga_cizgi_roman_ceviri/tree/main/resimler/5.jpg)
 
-![4](https://github.com/koesan/manga_cizgi_roman_ceviri/assets/96130124/3d9e217d-27a4-4af6-a915-15ed7c2fb7e6)
+![3](https://github.com/koesan/manga_cizgi_roman_ceviri/tree/main/resimler/6.png)
