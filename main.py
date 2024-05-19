@@ -1,9 +1,16 @@
-import easyocr
-from transformers import pipeline
-import cv2
-import textwrap
-import os
+from simple_lama_inpainting import SimpleLama
+import deepl
 from tqdm import tqdm
+import numpy as np
+import textwrap3
+from paddleocr import PaddleOCR
+import cv2
+from colorizator import MangaColorizator
+import os
+from PIL import ImageFont, ImageDraw, Image
+
+renklendir = 1
+api = "19977363-aef8-46f6-b48f-ec8bd21580d8:fx"
 
 # Yakın kelimeleri bulan fonksiyon
 def yakın_kelimeleri_bul(kordinatlar):
@@ -45,10 +52,9 @@ def indexleri_bul(dizi1, dizi2):
         indeksler.append(eleman_indeksleri)
 
     return indeksler
-
+#auto spale chacke
 # Metni düzeltme fonksiyonu
 def verileri_düzelt(dizi):
-
     duzeltilmis_elemanlar = []
     i = 0
     while i < len(dizi):
@@ -74,56 +80,89 @@ def verileri_düzelt(dizi):
 
 # Çeviri işlemini gerçekleştiren fonksiyon
 def translators(text, translator):
-
-    output = translator(text, clean_up_tokenization_spaces=True)
-    output = output[0]["translation_text"]
+ 
+    output = str(translator.translate_text(text, target_lang="TR"))
     # Türkçe karakterleri ingilizce karakterlere çevir
-    cevirme_tablosu = str.maketrans("çğıöşüÇĞİÖŞÜ", "cgiosuCGIOSU")
-    output = output.translate(cevirme_tablosu)
-
+    #cevirme_tablosu = str.maketrans("çğıöşüÇĞİÖŞÜ", "cgiosuCGIOSU")
+    #output = output.translate(cevirme_tablosu)
     return output
 
-# Beyaz kare oluşturan fonksiyon
-def beyaz_kare_olustur(dizi, dizi2, img_path):
-
+def img_mask(dizi, dizi2, img_path):
+    
     img = cv2.imread(img_path)
-
-    # Gerekli değişkenler
-    değişken = 0
-    font = cv2.FONT_HERSHEY_COMPLEX_SMALL
-    font_size = 0.7
-    font_thickness = 1
+    height, width, _ = img.shape
+    img = np.zeros((height, width, 1), dtype=np.uint8)
 
     for eleman in dizi:
 
-        # En büyük x değeri x1, en küçük y değeri y1'e, en küçük x değeri x2, en büyük y değeri ise y2'ye yerleştirilir
+        all_x = [point[0] for sublist in eleman for point in sublist]
+        all_y = [point[1] for sublist in eleman for point in sublist]
+        x1, y1 = max(all_x), max(all_y)
+        x2, y2 = min(all_x), min(all_y)
+
+        img = cv2.rectangle(img, (int(x1+7), int(y1+7)), (int(x2-7), int(y2-7)), (255, 255, 255), thickness=cv2.FILLED)
+
+    return img
+    
+# Beyaz kare oluşturan fonksiyon
+def beyaz_kare_olustur(dizi, dizi2, img_path, simple_lama):
+    
+    img = cv2.imread(img_path)
+    mask = img_mask(dizi, dizi2, img_path)
+    
+    img = simple_lama(img, mask)
+    değişken = 0
+    draw = ImageDraw.Draw(img)
+
+    font = ImageFont.truetype("/usr/share/fonts/truetype/msttcorefonts/Arial.ttf", 16)
+    for eleman in dizi:
+    # En büyük x değeri x1, en küçük y değeri y1'e, en küçük x değeri x2, en büyük y değeri ise y2'ye yerleştirilir
         all_x = [point[0] for sublist in eleman for point in sublist]
         all_y = [point[1] for sublist in eleman for point in sublist]
         x1, y1 = max(all_x), max(all_y)
         x2, y2 = min(all_x), min(all_y)
         # Aldığın kordinatlara beyaz bir kare çiz
-        img = cv2.rectangle(img, (int(x1), int(y1)), (int(x2), int(y2)), (255, 255, 255), thickness=cv2.FILLED)
+        #img = cv2.rectangle(img, (int(x1), int(y1)), (int(x2), int(y2)), (255, 255, 255), thickness=cv2.FILLED)
 
         # Çevrilmiş metini yeni beyaz karenin üstüne yaz
-        wrapped_text = textwrap.wrap(dizi2[değişken], width=15)
+        wrapped_text = textwrap3.wrap(dizi2[değişken], width=20)
         for i, line in enumerate(wrapped_text):
-            textsize = cv2.getTextSize(line, font, font_size, font_thickness)[0]
-            gap = textsize[1] + 10
-            y = int((y1 + y2) / 2) + i * gap
-            x = int((x1 + x2 - textsize[0]) / 2)
-            cv2.putText(img, line, (x, y), font, font_size, (0, 0, 0), font_thickness, lineType=cv2.LINE_AA)
-
+            y = int((y1 + y2) / 2) + i * 20
+            x = int((x1 + x2 - int(draw.textlength(line, font=font))) / 2)
+            draw.text((x,y-20), line, fill=(0,0,0), font=font)
         değişken += 1
 
+    img = np.array(img)
     return img
+
+def unicod_textwrap(metin):
+    satirlar = []
+    satir = ""
+    genislik = 15
+    kelime_listesi = metin.split()
+    
+    for kelime in kelime_listesi:
+        if len(satir) + len(kelime) <= genislik:
+            satir += kelime + " "
+        else:
+            satirlar.append(satir.strip())
+            satir = kelime + " "
+    
+    if satir:
+        satirlar.append(satir.strip())
+    
+    return satirlar
 
 # Ana işlevi gerçekleştiren fonksiyon
 def main():
 
+    #resimi renklendirmek için
+    colorizator = MangaColorizator("cpu", 'networks/generator.zip','networks/extractor.pth')
+    
     # Pipline ve easyocr yapıları oluşturuyor 
-    reader = easyocr.Reader(['en'], gpu=False)
-    translator = pipeline(task="translation", model="Helsinki-NLP/opus-mt-tc-big-en-tr")
-
+    reader = PaddleOCR(lang='en')
+    translator = deepl.Translator(api)
+    simple_lama = SimpleLama()
     path = "manga"
     save = "cevri_manga"
     dosya_listesi = os.listdir(path)
@@ -141,8 +180,10 @@ def main():
         #dilation = cv2.dilate(erosion, kernel, iterations=1)
         #opening = cv2.morphologyEx(img, cv2.MORPH_OPEN, kernel)
 
-        dizi = reader.readtext(img)
-
+        dizi = reader.ocr(img)
+        #dizi = sum(dizi, [])
+        dizi = [item for sublist in dizi if sublist is not None for item in sublist]
+        
         if len(dizi) > 1:
 
             kordinatlar = [orta_nokta_bul(i[0]) for i in dizi]
@@ -160,14 +201,30 @@ def main():
 
                 for a in i:
                     kordinatlar_.append(dizi[a][0])
-                    string.append(str(dizi[a][1]))
+                    string.append(str(dizi[a][1][0]))
 
                 kordinatlar.append(kordinatlar_)
                 konuşma_dizisi.append(translators(verileri_düzelt(string), translator))
 
             parçalar = resim_adı.split(".")
 
-            resim = beyaz_kare_olustur(kordinatlar, konuşma_dizisi, resim_yolu)
+            resim = beyaz_kare_olustur(kordinatlar, konuşma_dizisi, resim_yolu, simple_lama)
+            
+            if renklendir == 1:
+                if resim.shape[1] % 32 != 0:
+
+                    width = 32 * (resim.shape[1] // 32)
+                
+                else:
+                    width =resim.shape[1]
+                colorizator.set_image(resim, width, True, 25)
+
+                resim = colorizator.colorize()
+
+                resim *= 255
+                resim = cv2.cvtColor(resim, cv2.COLOR_BGR2RGB)
+                
+                #plt.imsave(f"{save}/{parçalar[0]}.{parçalar[1]}", resim)
             cv2.imwrite(f"{save}/{parçalar[0]}.{parçalar[1]}", resim)
 
 if __name__ == "__main__":
