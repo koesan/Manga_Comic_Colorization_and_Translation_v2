@@ -32,6 +32,8 @@ kodda 12. satırdaki renklendir = 1 ise reimleri renklendirir. renklendir = 0 is
 
 # Gereksinimler
 
+Öncelikle, [generator.zip](https://github.com/kullanıcıadı/depoadı/raw/branchadı/path/to/generator.zip) dosyasını indirip "networks" klasörünün içine koymalısın.
+
 deepl==1.17.0
 
 paddleocr==2.7.3
