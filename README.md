@@ -54,14 +54,14 @@ pillow==9.5.0
 
 
 
+
 # İnput:
 
 ![1](https://github.com/koesan/manga_cizgi_roman_ceviri/assets/96130124/f729cc10-4a13-465b-9327-e766f5776625)
 
 ![2](https://github.com/koesan/manga_cizgi_roman_ceviri/assets/96130124/bf31bd33-5af8-4563-9d94-67ad22351ef3)
 
-![4](https://github.com/koesan/manga_cizgi_roman_ceviri/assets/96130124/5cd9b5a3-41b3-4ecf-ac2a-5254c6dfb949)
-
+file:///home/koesan/%C4%B0ndirilenler/manga_cizgi_roman_ceviri-main-20240416T084628Z-001/manga_cizgi_roman_ceviri-main/KBHu3LM.png
 
 
 
