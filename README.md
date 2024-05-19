@@ -32,6 +32,8 @@ kodda 12. satırdaki renklendir = 1 ise reimleri renklendirir. renklendir = 0 is
 
 # Gereksinimler
 
+Öncelikle, [generator.zip](https://drive.google.com/file/d/1qmxUEKADkEM4iYLp1fpPLLKnfZ6tcF-t/view) dosyasını indirip "networks" klasörünün içine koymalısın.
+
 deepl==1.17.0
 
 paddleocr==2.7.3
@@ -48,7 +50,8 @@ tqdm==4.66.2
 
 textwrap3==0.9.2 
 
-transformers==4.35.2
+pillow==9.5.0
+
 
 
 
@@ -58,7 +61,8 @@ transformers==4.35.2
 
 ![2](https://github.com/koesan/manga_cizgi_roman_ceviri/assets/96130124/bf31bd33-5af8-4563-9d94-67ad22351ef3)
 
-![4](https://github.com/koesan/manga_cizgi_roman_ceviri/assets/96130124/5cd9b5a3-41b3-4ecf-ac2a-5254c6dfb949)
+![3](file:///home/koesan/%C4%B0ndirilenler/manga_cizgi_roman_ceviri-main-20240416T084628Z-001/manga_cizgi_roman_ceviri-main/KBHu3LM.png)
+
 
 
 
