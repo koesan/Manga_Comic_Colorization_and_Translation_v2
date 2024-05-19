@@ -61,7 +61,9 @@ pillow==9.5.0
 
 ![2](https://github.com/koesan/manga_cizgi_roman_ceviri/assets/96130124/bf31bd33-5af8-4563-9d94-67ad22351ef3)
 
-file:///home/koesan/%C4%B0ndirilenler/manga_cizgi_roman_ceviri-main-20240416T084628Z-001/manga_cizgi_roman_ceviri-main/KBHu3LM.png
+![3](file:///home/koesan/%C4%B0ndirilenler/manga_cizgi_roman_ceviri-main-20240416T084628Z-001/manga_cizgi_roman_ceviri-main/KBHu3LM.png)
+
+
 
 
 
