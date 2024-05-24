@@ -10,7 +10,7 @@ import os
 from PIL import ImageFont, ImageDraw, Image
 
 renklendir = 1
-api = "19977363-aef8-46f6-b48f-ec8bd21580d8:fx"
+api = "" # DeepL api key
 
 # Yakın kelimeleri bulan fonksiyon
 def yakın_kelimeleri_bul(kordinatlar):
