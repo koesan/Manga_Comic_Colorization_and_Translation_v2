@@ -1,7 +1,7 @@
 # Manga Comic Colorization and Translation v2 (Manga ve Çizgi Roman Çevirici ve Renklendirici)
 
-Bu proje, yapay zeka kullanarak farklı dillerdeki mangaları veya çizgi romanları herhangi bir dile çevirir ve renksiz mangaları renklendirir. Proje, çeşitli aşamalardan oluşmaktadır ve farklı işlevleri gerçekleştirmek için çeşitli kütüphaneleri kullanır.
-Renkli manga veya çizgi romanları çevirir, renksiz manga veya çizgi romanları çevirir ve istenilirse renklendirebilir.
+Bu proje, yapay zeka kullanarak farklı dillerdeki mangaları veya çizgi romanları herhangi bir dile çevirir ve renksiz mangaları renklendirir. Renkli manga veya çizgi romanları çevirir, renksiz manga veya çizgi romanları çevirir ve istenilirse renklendirebilir. Proje, çeşitli aşamalardan oluşmaktadır
+
 
 Kodda yapılacak değişiklik ile farklı diller arası çevri işlemide gereçekleştirilebilinir.
 
