@@ -73,7 +73,7 @@ Projeyi çalıştırmadan önce, sanal bir Python ortamı oluşturup kütüphane
    Sanal ortamı oluşturduktan sonra, projeyi GitHub'dan klonlayın:
 
    ```bash
-   git clone https://github.com/koesan/Manga_Comic_Translation_v2.git
+   git clone https://github.com/koesan/Manga_Comic_Colorization_and_Translation_v2.git
    ```
 
 4. **Gerekli Dosyaları İndirin**  
@@ -88,13 +88,13 @@ Projeyi çalıştırmadan önce, sanal bir Python ortamı oluşturup kütüphane
    - **Linux/MacOS**:
      ```bash
      source myvenv/bin/activate
-     cd ./Manga_Comic_Translation_v2
+     cd ./Manga_Comic_Colorization_and_Translation_v2
      ```
 
    - **Windows**:
      ```bash
      .\myvenv\Scripts\activate
-     cd .\Manga_Comic_Translation_v2
+     cd .\Manga_Comic_Colorization_and_Translation_v2
      ```
 
 7. **Projeyi Başlatın**  
