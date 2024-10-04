@@ -28,22 +28,6 @@ Resme çevrilmiş metinleri eklemek için önce resim üzerindeki metinlerin kal
 siyah beyaz resimleri renklendirmek için https://github.com/qweasdd/manga-colorization-v2 projeden yararladnım. bu projeyi kendi koduma uyarlıyarak renksiz resimleri renklendirdim.
 kodda 12. satırdaki renklendir = 1 ise reimleri renklendirir. renklendir = 0 ise resimleri renklendirmez.
 
-
-
-# Gereksinimler
-
-Öncelikle, [generator.zip](https://drive.google.com/file/d/1qmxUEKADkEM4iYLp1fpPLLKnfZ6tcF-t/view) dosyasını indirip "networks" klasörünün içine koymalısın.
-
-deepl==1.17.0
-paddleocr==2.7.3
-paddlepaddle==2.6.1
-simple-lama-inpainting==0.1.0
-torch==2.2.2
-torchvision==0.17.2
-tqdm==4.66.2
-textwrap3==0.9.2 
-pillow==9.5.0
-
 ## Kurulum
 
 Projeyi çalıştırmadan önce, sanal bir Python ortamı oluşturup kütüphaneleri yüklemek için şu adımları izleyin:
