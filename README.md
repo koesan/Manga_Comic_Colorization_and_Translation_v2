@@ -73,7 +73,7 @@ Projeyi çalıştırmadan önce, sanal bir Python ortamı oluşturup kütüphane
    Sanal ortamı oluşturduktan sonra, projeyi GitHub'dan klonlayın:
 
    ```bash
-   git clone <repo_url>
+   git clone https://github.com/koesan/Manga_Comic_Translation_v2.git
    ```
 
 4. **Gerekli Dosyaları İndirin**  
@@ -88,13 +88,13 @@ Projeyi çalıştırmadan önce, sanal bir Python ortamı oluşturup kütüphane
    - **Linux/MacOS**:
      ```bash
      source myvenv/bin/activate
-     cd <repo_klon_klasörü>
+     cd ./Manga_Comic_Translation_v2
      ```
 
    - **Windows**:
      ```bash
      .\myvenv\Scripts\activate
-     cd <repo_klon_klasörü>
+     cd .\Manga_Comic_Translation_v2
      ```
 
 7. **Projeyi Başlatın**  
@@ -106,19 +106,6 @@ Projeyi çalıştırmadan önce, sanal bir Python ortamı oluşturup kütüphane
 
 8. **Sonuçlar**  
    Çevrilen ve renklendirilen manga sayfaları `result` klasörünün içinde kaydedilecektir.
-
-
-Bu adımları takip ederek projeyi güvenli bir sanal ortamda çalıştırabilirsiniz.
-
-Sanal ortamı oluşturduktan sonra repoyu github üzerinden clonlayın ve [generator.zip](https://drive.google.com/file/d/1qmxUEKADkEM4iYLp1fpPLLKnfZ6tcF-t/view) dosyasını indirip "networks" klasörünün içine koymalısın.
-
-manga klasörünün içine renklendirmek ve çevirmek isteidğiniz mangaları yerleştirin kodu çalıştırıdktan sonra çevrilen ve renklendirilen mangalar result klasörünün içinde olacak.
-
-kopyalama işlemini yaptıktan sonra myenv python sanal ortamındaiken cd ile reponun klonunun olduğu ortama girin ve ardından python3 main.py diyerek projeyi başlatın
-
-Bu adımları takip ederek projeyi güvenli bir sanal ortamda çalıştırabilirsiniz.
-
-
 
 
 # İnput:
