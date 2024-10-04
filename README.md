@@ -35,22 +35,89 @@ kodda 12. satırdaki renklendir = 1 ise reimleri renklendirir. renklendir = 0 is
 Öncelikle, [generator.zip](https://drive.google.com/file/d/1qmxUEKADkEM4iYLp1fpPLLKnfZ6tcF-t/view) dosyasını indirip "networks" klasörünün içine koymalısın.
 
 deepl==1.17.0
-
 paddleocr==2.7.3
-
 paddlepaddle==2.6.1
-
 simple-lama-inpainting==0.1.0
-
 torch==2.2.2
-
 torchvision==0.17.2
-
 tqdm==4.66.2
-
 textwrap3==0.9.2 
-
 pillow==9.5.0
+
+## Kurulum
+
+Projeyi çalıştırmadan önce, sanal bir Python ortamı oluşturup kütüphaneleri yüklemek için şu adımları izleyin:
+
+1. Sanal ortamı oluşturun:
+    ```bash
+    python3 -m venv myenv
+    ```
+
+2. Sanal ortamı aktif hale getirin:
+
+    - **Linux/MacOS**:
+      ```bash
+      source myenv/bin/activate
+      ```
+    - **Windows**:
+      ```bash
+      .\myenv\Scripts\activate
+      ```
+
+3. Sanal ortam aktif hale geldikten sonra, gerekli kütüphaneleri şu komutla yükleyin:
+
+    ```bash
+    pip install deepl==1.17.0 paddleocr==2.7.3 paddlepaddle==2.6.1 simple-lama-inpainting==0.1.0 torch==2.2.2 torchvision==0.17.2 tqdm==4.66.2 textwrap3==0.9.2 pillow==9.5.0
+    ```
+2. **Repoyu Clonelayın**  
+   Sanal ortamı oluşturduktan sonra, projeyi GitHub'dan klonlayın:
+
+   ```bash
+   git clone <repo_url>
+   ```
+
+4. **Gerekli Dosyaları İndirin**  
+   [generator.zip](https://drive.google.com/file/d/1qmxUEKADkEM4iYLp1fpPLLKnfZ6tcF-t/view) dosyasını indirip, klonladığınız repodaki `networks` klasörünün içine yerleştirin.
+
+5. **Manga Dosyalarını Yerleştirin**  
+   Renklendirmek ve çevirmek istediğiniz manga dosyalarını `manga` klasörünün içine ekleyin. Desteklenen dosya formatları: `.jpg`, `.jpeg`, `.png`, `.webp`.
+
+6. **Projeyi Çalıştırma**  
+   Sanal ortamı aktif edin ve proje klasörüne gidin:
+
+   - **Linux/MacOS**:
+     ```bash
+     source myvenv/bin/activate
+     cd <repo_klon_klasörü>
+     ```
+
+   - **Windows**:
+     ```bash
+     .\myvenv\Scripts\activate
+     cd <repo_klon_klasörü>
+     ```
+
+7. **Projeyi Başlatın**  
+   Sanal ortam aktif hale getirildikten ve doğru dizine girildikten sonra projeyi çalıştırmak için şu komutu kullanın:
+
+   ```bash
+   python3 main.py
+   ```
+
+8. **Sonuçlar**  
+   Çevrilen ve renklendirilen manga sayfaları `result` klasörünün içinde kaydedilecektir.
+
+
+Bu adımları takip ederek projeyi güvenli bir sanal ortamda çalıştırabilirsiniz.
+
+Sanal ortamı oluşturduktan sonra repoyu github üzerinden clonlayın ve [generator.zip](https://drive.google.com/file/d/1qmxUEKADkEM4iYLp1fpPLLKnfZ6tcF-t/view) dosyasını indirip "networks" klasörünün içine koymalısın.
+
+manga klasörünün içine renklendirmek ve çevirmek isteidğiniz mangaları yerleştirin kodu çalıştırıdktan sonra çevrilen ve renklendirilen mangalar result klasörünün içinde olacak.
+
+kopyalama işlemini yaptıktan sonra myenv python sanal ortamındaiken cd ile reponun klonunun olduğu ortama girin ve ardından python3 main.py diyerek projeyi başlatın
+
+Bu adımları takip ederek projeyi güvenli bir sanal ortamda çalıştırabilirsiniz.
+
 
 
 
