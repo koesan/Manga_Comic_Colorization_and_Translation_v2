@@ -188,6 +188,14 @@ Projeyi çalıştırmadan önce, sanal bir Python ortamı oluşturup kütüphane
 
 ***
 
+| Original                       | Colorization                   |
+|-------------------------------|---------------------------------|
+| ![1](https://github.com/koesan/manga_cizgi_roman_ceviri/raw/main/resimler/1.jpg) | ![1](https://github.com/koesan/manga_cizgi_roman_ceviri/raw/main/resimler/4.jpg) |
+| ![2](https://github.com/koesan/manga_cizgi_roman_ceviri/raw/main/resimler/2.jpg) | ![2](https://github.com/koesan/manga_cizgi_roman_ceviri/raw/main/resimler/5.jpg) |
+| ![3](https://github.com/koesan/manga_cizgi_roman_ceviri/raw/main/resimler/3.png) | ![3](https://github.com/koesan/manga_cizgi_roman_ceviri/raw/main/resimler/6.png) |
+
+***
+
 # İnput:
 
 ![1](https://github.com/koesan/manga_cizgi_roman_ceviri/raw/main/resimler/1.jpg)
