@@ -123,6 +123,11 @@ Before running the project, follow these steps to create a virtual Python enviro
 9. **Results**  
    Translated and colorized manga pages will be saved in `result` folder.
 
+> **Note:** Reminder  
+> If the value at line 12 is 0, no colorization will be applied. If it is 1, colorization will be applied.  
+> Don’t forget to add your [DeepL API key](https://www.deepl.com/en/pro#developer) at line 13.
+>
+
 ***
 
 Projeyi çalıştırmadan önce, sanal bir Python ortamı oluşturup kütüphaneleri yüklemek için şu adımları izleyin:
@@ -148,20 +153,20 @@ Projeyi çalıştırmadan önce, sanal bir Python ortamı oluşturup kütüphane
     ```bash
     pip install deepl==1.17.0 paddleocr==2.7.3 paddlepaddle==2.6.1 simple-lama-inpainting==0.1.0 torch==2.2.2 torchvision==0.17.2 tqdm==4.66.2 textwrap3==0.9.2 pillow==9.5.0
     ```
-2. **Repoyu Clonelayın**  
+4. **Repoyu Clonelayın**  
    Sanal ortamı oluşturduktan sonra, projeyi GitHub'dan klonlayın:
 
    ```bash
    git clone https://github.com/koesan/Manga_Comic_Colorization_and_Translation_v2.git
    ```
 
-4. **Gerekli Dosyaları İndirin**  
+5. **Gerekli Dosyaları İndirin**  
    [generator.zip](https://drive.google.com/file/d/1qmxUEKADkEM4iYLp1fpPLLKnfZ6tcF-t/view) dosyasını indirip, klonladığınız repodaki `networks` klasörünün içine yerleştirin.
 
-5. **Manga Dosyalarını Yerleştirin**  
+6. **Manga Dosyalarını Yerleştirin**  
    Renklendirmek ve çevirmek istediğiniz manga dosyalarını `manga` klasörünün içine ekleyin. Desteklenen dosya formatları: `.jpg`, `.jpeg`, `.png`, `.webp`.
 
-6. **Projeyi Çalıştırma**  
+7. **Projeyi Çalıştırma**  
    Sanal ortamı aktif edin ve proje klasörüne gidin:
 
    - **Linux/MacOS**:
@@ -176,15 +181,20 @@ Projeyi çalıştırmadan önce, sanal bir Python ortamı oluşturup kütüphane
      cd .\Manga_Comic_Colorization_and_Translation_v2
      ```
 
-7. **Projeyi Başlatın**  
+8. **Projeyi Başlatın**  
    Sanal ortam aktif hale getirildikten ve doğru dizine girildikten sonra projeyi çalıştırmak için şu komutu kullanın:
 
    ```bash
    python3 main.py
    ```
 
-8. **Sonuçlar**  
+9. **Sonuçlar**  
    Çevrilen ve renklendirilen manga sayfaları `result` klasörünün içinde kaydedilecektir.
+
+
+> **Not:** Hatırlatma  
+> 12. satırda değer 0 ise renklendirme yapılmaz. Eğer 1 ise renklendirme yapılır.  
+> 13. satırda [DeepL API anahtarınızı](https://www.deepl.com/en/pro#developer) eklemeyi unutmayın.
 
 ***
 
