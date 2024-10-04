@@ -164,7 +164,7 @@ def main():
     translator = deepl.Translator(api)
     simple_lama = SimpleLama()
     path = "manga"
-    save = "cevri_manga"
+    save = "result"
     dosya_listesi = os.listdir(path)
     resimler = [dosya for dosya in dosya_listesi if dosya.endswith(('.jpg', '.jpeg', '.png', ".webp"))]
 
