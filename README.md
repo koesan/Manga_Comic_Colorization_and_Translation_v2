@@ -25,29 +25,21 @@ This project combines advanced computer vision and natural language processing t
 
 ### Key Features
 
-#### 🔍 Optical Character Recognition (OCR)
-- **Technology**: PaddleOCR engine for superior text extraction
-- **Performance**: Optimized for manga-style text detection
-- **Accuracy**: Higher precision compared to EasyOCR and PyTesseract
-- **Language Support**: Multi-language text recognition capabilities
+### 🔍 Optical Character Recognition (OCR)
 
-#### 🌐 Advanced Translation System
-- **Primary Engine**: DeepL API for professional-grade translations
-- **Quality**: Human-level translation accuracy
-- **Flexibility**: Easily configurable for different language pairs
-- **Fallback Support**: Built-in error handling and retry mechanisms
+In this system, text extraction is performed using the **PaddleOCR** engine. This framework is optimized for manga-style content, provides higher accuracy compared to EasyOCR and PyTesseract, and supports multilingual recognition.
 
-#### 🎨 AI-Powered Image Inpainting
-- **Technology**: Simple-LAMA inpainting algorithm
-- **Function**: Seamlessly removes original text from speech bubbles
-- **Quality**: Context-aware background reconstruction
-- **Efficiency**: Fast processing without quality compromise
+### 🌐 Advanced Translation System
 
-#### 🌈 Neural Network Colorization
-- **Architecture**: Custom ResNeXt-based generator network
-- **Source**: Adapted from manga-colorization-v2 project
-- **Quality**: Professional-grade colorization results
-- **Control**: Optional colorization with simple configuration toggle
+The translation process is built on the **DeepL API** to ensure professional-level accuracy. It supports flexible use across different language pairs and includes automatic retry mechanisms for error handling.
+
+### 🎨 AI-Powered Image Inpainting
+
+Text removal from speech bubbles and appropriate image completion are carried out with the **Simple-LAMA algorithm**. This approach reconstructs the background in a way that is consistent with the visual context.
+
+### 🌈 Neural Network-Based Colorization
+
+For the colorization stage, a **ResNeXt-based generator network** is used. This architecture is taken directly from the [manga-colorization-v2](https://github.com/qweasdd/manga-colorization-v2) project, enabling automatic colorization of black-and-white manga panels.
 
 ### Technical Architecture
 
@@ -222,11 +214,6 @@ colorizator = MangaColorizator("cuda", 'networks/generator.zip','networks/extrac
 #### Batch Processing
 The system automatically processes all supported images in the `manga/` directory with progress tracking via tqdm.
 
-#### Memory Management
-- Images are automatically resized to optimize memory usage
-- Processing occurs in sequential batches to prevent memory overflow
-- Temporary variables are properly cleaned up after processing
-
 ### Troubleshooting
 
 #### Common Issues
@@ -250,20 +237,6 @@ Ensure Arial font is available on your system:
 **4. OCR Accuracy Issues**
 - Ensure input images have sufficient resolution (minimum 300 DPI recommended)
 - Check that text regions are clearly visible and not heavily stylized
-
-### Contributing
-
-We welcome contributions to improve the project. Please follow these guidelines:
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/improvement`)
-3. Commit your changes (`git commit -am 'Add new feature'`)
-4. Push to the branch (`git push origin feature/improvement`)
-5. Create a Pull Request
-
-### License
-
-This project is released under the MIT License. See the LICENSE file for details.
 
 ### Acknowledgments
 
@@ -290,29 +263,21 @@ Bu proje, manga ve çizgi roman sayfalarını otomatik olarak çevirmek ve renkl
 
 ### Temel Özellikler
 
-#### 🔍 Optik Karakter Tanıma (OCR)
-- **Teknoloji**: Üstün metin çıkarma için PaddleOCR motoru
-- **Performans**: Manga tarzı metin algılama için optimize edilmiş
-- **Doğruluk**: EasyOCR ve PyTesseract'a kıyasla daha yüksek hassasiyet
-- **Dil Desteği**: Çok dilli metin tanıma yetenekleri
+### 🔍 Optik Karakter Tanıma (OCR)
 
-#### 🌐 Gelişmiş Çeviri Sistemi
-- **Ana Motor**: Profesyonel kalitede çeviriler için DeepL API
-- **Kalite**: İnsan seviyesinde çeviri doğruluğu
-- **Esneklik**: Farklı dil çiftleri için kolay yapılandırma
-- **Yedek Destek**: Dahili hata yönetimi ve yeniden deneme mekanizmaları
+Sistemde metin çıkarma işlemleri **PaddleOCR** motoru ile gerçekleştirilmektedir. Manga tarzı içerikler için optimize edilen bu altyapı, EasyOCR ve PyTesseract’a göre daha yüksek doğruluk sağlar ve çok dilli tanıma desteği sunar.
 
-#### 🎨 Yapay Zeka Destekli Görüntü Tamamlama
-- **Teknoloji**: Simple-LAMA tamamlama algoritması
-- **İşlev**: Konuşma balonlarından orijinal metni sorunsuz bir şekilde kaldırır
-- **Kalite**: Bağlam farkında arka plan yeniden yapılandırması
-- **Verimlilik**: Kaliteden ödün vermeden hızlı işleme
+### 🌐 Gelişmiş Çeviri Sistemi
 
-#### 🌈 Sinir Ağı Renklendirmesi
-- **Mimari**: Özel ResNeXt tabanlı üretici ağ
-- **Kaynak**: manga-colorization-v2 projesinden uyarlanmış
-- **Kalite**: Profesyonel kalitede renklendirme sonuçları
-- **Kontrol**: Basit yapılandırma anahtarıyla isteğe bağlı renklendirme
+Çeviri süreci, profesyonel seviyede doğruluk için **DeepL API** üzerine kuruludur. Farklı dil çiftlerinde esnek kullanım sağlar ve hata durumlarında otomatik yeniden deneme mekanizmaları içerir.
+
+### 🎨 Yapay Zeka Destekli Görüntü Tamamlama
+
+Konuşma balonlarından metin kaldırma ve uygun görsel tamamlama işlemleri **Simple-LAMA algoritması** ile yapılmaktadır. Bu yöntem, arka planın bağlamına uygun yeniden yapılandırma sağlar.
+
+### 🌈 Sinir Ağı Renklendirmesi
+
+Renklendirme aşamasında **ResNeXt tabanlı üretici ağ** kullanılmakta olup bu mimari doğrudan [manga-colorization-v2](https://github.com/qweasdd/manga-colorization-v2) projesinden alınmıştır. Böylece siyah-beyaz manga panelleri otomatik olarak renklendirilir.
 
 ### Teknik Mimari
 
@@ -487,11 +452,6 @@ colorizator = MangaColorizator("cuda", 'networks/generator.zip','networks/extrac
 #### Toplu İşleme
 Sistem, tqdm aracılığıyla ilerleme takibi ile `manga/` dizinindeki tüm desteklenen görüntüleri otomatik olarak işler.
 
-#### Bellek Yönetimi
-- Görüntüler bellek kullanımını optimize etmek için otomatik olarak yeniden boyutlandırılır
-- Bellek taşmasını önlemek için işleme sıralı toplu işlemler halinde gerçekleşir
-- Geçici değişkenler işlem sonrası düzgün bir şekilde temizlenir
-
 ### Sorun Giderme
 
 #### Yaygın Sorunlar
@@ -516,19 +476,13 @@ Sisteminizde Arial fontunun mevcut olduğundan emin olun:
 - Giriş görüntülerinin yeterli çözünürlükte olduğundan emin olun (minimum 300 DPI önerilen)
 - Metin bölgelerinin açık bir şekilde görünür ve aşırı stilize edilmediğini kontrol edin
 
-### Katkıda Bulunma
+### Örnek Sonuçlar
 
-Projeyi geliştirmek için katkılarınızı memnuniyetle karşılıyoruz. Lütfen şu yönergeleri takip edin:
-
-1. Depoyu fork edin
-2. Özellik dalı oluşturun (`git checkout -b feature/iyilestirme`)
-3. Değişikliklerinizi commit edin (`git commit -am 'Yeni özellik ekle'`)
-4. Dala push edin (`git push origin feature/iyilestirme`)
-5. Pull Request oluşturun
-
-### Lisans
-
-Bu proje MIT Lisansı altında yayınlanmıştır. Ayrıntılar için LICENSE dosyasına bakın.
+| Giriş | Çıkış |
+|-------|-------|
+| ![Giriş 1](resimler/1.jpg) | ![Çıkış 1](resimler/4.jpg) |
+| ![Giriş 2](resimler/2.jpg) | ![Çıkış 2](resimler/5.jpg) |
+| ![Giriş 3](resimler/3.png) | ![Çıkış 3](resimler/6.png) |
 
 ### Teşekkürler
 
@@ -537,13 +491,9 @@ Bu proje MIT Lisansı altında yayınlanmıştır. Ayrıntılar için LICENSE do
 - Tamamlama implementasyonu [Simple-LAMA-Inpainting](https://github.com/enesmsahin/simple-lama-inpainting) kullanılarak yapılmıştır
 - Çeviri hizmetleri [DeepL API](https://www.deepl.com/docs-api) tarafından sağlanmaktadır
 
-### Örnek Sonuçlar
+### License
 
-| Giriş | Çıkış |
-|-------|-------|
-| ![Giriş 1](resimler/1.jpg) | ![Çıkış 1](resimler/4.jpg) |
-| ![Giriş 2](resimler/2.jpg) | ![Çıkış 2](resimler/5.jpg) |
-| ![Giriş 3](resimler/3.png) | ![Çıkış 3](resimler/6.png) |
+This project is released under the MIT License. See the LICENSE file for details.
 
 ---
 
