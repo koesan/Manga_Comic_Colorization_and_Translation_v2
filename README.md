@@ -17,7 +17,7 @@
 
 ---
 
-## 🇬🇧 English
+## English 🇬🇧
 
 ### Overview
 
