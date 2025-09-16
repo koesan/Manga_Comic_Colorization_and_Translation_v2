@@ -12,7 +12,7 @@
 *Yapay zeka destekli manga ve çizgi roman çeviri ve renklendirme çözümü*
 
 ## 🔗  Project Links / Proje Bağlantıları 
-**Advanced Version / Gelişmiş Sürüm**: [Evoars Projesi](https://github.com/koesan/Evoars/blob/main/README.md#t%C3%BCrk%C3%A7e)  
+**Advanced Version / Gelişmiş Sürüm**: [Evoars](https://github.com/koesan/Evoars)  
 
 **Older Version / Eski Sürüm**: [Manga Çizgi Roman Çeviri V1](https://github.com/koesan/manga_cizgi_roman_ceviri_v1)
 
