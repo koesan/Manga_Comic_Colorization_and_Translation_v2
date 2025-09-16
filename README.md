@@ -10,8 +10,15 @@
 **An AI-powered solution for manga and comic translation and colorization**
 
 *Yapay zeka destekli manga ve çizgi roman çeviri ve renklendirme çözümü*
+## 📎 Live Demo - Canlı Demo
 
-## 🔗  Project Links / Proje Bağlantıları 
+[![Hugging Face](https://img.shields.io/badge/🤗%20Hugging%20Face-Demo-yellow?style=for-the-badge&logo=huggingface&logoColor=white)](https://huggingface.co/spaces/koesan/mangaspaces)
+
+**🇬🇧 Try the previous version of Evoars on Hugging Face (CPU-based, processing may be slower)**  
+**🇹🇷 Evoars'ın önceki sürümünü Hugging Face'te test edin (CPU tabanlı, işlem daha yavaş olabilir)**
+
+These repositories contain other versions of the project:
+
 **Advanced Version / Gelişmiş Sürüm**: [Evoars](https://github.com/koesan/Evoars)  
 
 **Older Version / Eski Sürüm**: [Manga Çizgi Roman Çeviri V1](https://github.com/koesan/manga_cizgi_roman_ceviri_v1)
