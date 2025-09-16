@@ -25,8 +25,6 @@ These repositories contain other versions of the project:
 
 ---
 
-🇬🇧[English](#english) | 🇹🇷[Türkçe](#türkçe)
-
 </div>
 
 ### Sample Results
@@ -36,6 +34,13 @@ These repositories contain other versions of the project:
 | ![Input 1](resimler/1.jpg) | ![Output 1](resimler/4.jpg) |
 | ![Input 2](resimler/2.jpg) | ![Output 2](resimler/5.jpg) |
 | ![Input 3](resimler/3.png) | ![Output 3](resimler/6.png) |
+
+---
+<div align="center">
+   
+🇬🇧[English](#english) | 🇹🇷[Türkçe](#türkçe)
+
+</div>
 
 ---
 
