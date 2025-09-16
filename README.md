@@ -11,7 +11,7 @@
 
 *Yapay zeka destekli manga ve çizgi roman çeviri ve renklendirme çözümü*
 
-[English](#english) | [Türkçe](#türkçe)
+🇬🇧[English](#english) | 🇹🇷[Türkçe](#türkçe)
 
 </div>
 
