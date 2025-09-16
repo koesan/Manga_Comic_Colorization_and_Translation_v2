@@ -1,12 +1,12 @@
 # Manga Comic Colorization and Translation v2
 
+<div align="center">
+
 ![Python](https://img.shields.io/badge/python-v3.8+-blue.svg)
 ![PyTorch](https://img.shields.io/badge/PyTorch-v2.2.2-red.svg)
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
 ![Status](https://img.shields.io/badge/status-active-brightgreen.svg)
 
-<div align="center">
-  
 **An AI-powered solution for manga and comic translation and colorization**
 
 *Yapay zeka destekli manga ve çizgi roman çeviri ve renklendirme çözümü*
