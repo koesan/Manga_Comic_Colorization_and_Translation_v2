@@ -1,13 +1,13 @@
 # Manga Comic Colorization and Translation v2 (Manga ve Çizgi Roman Çevirici ve Renklendirici)
 
 ***
-
+🇺🇸
 his project use artificial intelligence to translate mangas or comics in different languages to any language. It also colorizes black and white mangas. It translates color mangas or comics and translates black and white mangas or comics. If desired, it can also colorize. The project has different steps.
 
 With simple change in code, it can translate between different languages.
 
 ***
-
+🇹🇷
 Bu proje, yapay zeka kullanarak farklı dillerdeki mangaları veya çizgi romanları herhangi bir dile çevirir ve renksiz mangaları renklendirir. Renkli manga veya çizgi romanları çevirir, renksiz manga veya çizgi romanları çevirir ve istenilirse renklendirebilir. Proje, çeşitli aşamalardan oluşmaktadır
 
 
@@ -18,7 +18,7 @@ Kodda yapılacak değişiklik ile farklı diller arası çevri işlemide gereçe
 ## FEATURES(ÖZELLİKLER)
 
 ***
-
+🇺🇸
 * OCR
 
 To extract text from images, OCR is used. In this project, I choose PaddleOCR library. PaddleOCR is faster and gives better result than other OCR libraries like EasyOCR or Pytesseract, so I decided to use it in the project.
@@ -36,7 +36,7 @@ To add translated text in image, first we need to remove text from image. For th
 To colorize black and white images, I used the project from https://github.com/qweasdd/manga-colorization-v2. I adapted this project to my code to colorize black and white images. If you set colorize = 1 at line 12, it will color images. If colorize = 0, it will not color images.
 
 ***
-
+🇹🇷
 * OCR
 
 Resimlerdeki metinleri çıkarmak için OCR kullanılmaktadır. Bu projede PaddleOCR kütüphanesi tercih ettim. 
@@ -61,6 +61,7 @@ kodda 12. satırdaki renklendir = 1 ise reimleri renklendirir. renklendir = 0 is
 
 ## Installation(Kurulum)
 
+🇺🇸
 Before running the project, follow these steps to create a virtual Python environment and install libraries:
 
 1. Create virtual environment:
@@ -130,6 +131,7 @@ Before running the project, follow these steps to create a virtual Python enviro
 
 ***
 
+🇹🇷
 Projeyi çalıştırmadan önce, sanal bir Python ortamı oluşturup kütüphaneleri yüklemek için şu adımları izleyin:
 
 1. Sanal ortamı oluşturun:
