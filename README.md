@@ -29,6 +29,14 @@ These repositories contain other versions of the project:
 
 </div>
 
+### Sample Results
+
+| Input | Output |
+|-------|---------|
+| ![Input 1](resimler/1.jpg) | ![Output 1](resimler/4.jpg) |
+| ![Input 2](resimler/2.jpg) | ![Output 2](resimler/5.jpg) |
+| ![Input 3](resimler/3.png) | ![Output 3](resimler/6.png) |
+
 ---
 
 ## English 
@@ -260,14 +268,6 @@ Ensure Arial font is available on your system:
 - OCR functionality powered by [PaddleOCR](https://github.com/PaddlePaddle/PaddleOCR)
 - Inpainting implementation using [Simple-LAMA-Inpainting](https://github.com/enesmsahin/simple-lama-inpainting)
 - Translation services provided by [DeepL API](https://www.deepl.com/docs-api)
-
-### Sample Results
-
-| Input | Output |
-|-------|---------|
-| ![Input 1](resimler/1.jpg) | ![Output 1](resimler/4.jpg) |
-| ![Input 2](resimler/2.jpg) | ![Output 2](resimler/5.jpg) |
-| ![Input 3](resimler/3.png) | ![Output 3](resimler/6.png) |
 
 ---
 
