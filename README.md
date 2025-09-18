@@ -1,13 +1,23 @@
-# Manga Comic Colorization and Translation v2: An AI-powered solution for manga and comic translation and colorization
-
 <div align="center">
+
+# ✨ An AI-powered solution for manga and comic translation and colorization
 
 ![Python](https://img.shields.io/badge/python-v3.8+-blue.svg)
 ![PyTorch](https://img.shields.io/badge/PyTorch-v2.2.2-red.svg)
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
 ![Status](https://img.shields.io/badge/status-active-brightgreen.svg)
 
-**An AI-powered solution for manga and comic translation and colorization**
+---
+
+### Sample Results
+
+| Input | Output |
+|-------|---------|
+| ![Input 1](resimler/1.jpg) | ![Output 1](resimler/4.jpg) |
+| ![Input 2](resimler/2.jpg) | ![Output 2](resimler/5.jpg) |
+| ![Input 3](resimler/3.png) | ![Output 3](resimler/6.png) |
+
+---
 
 ## 📎 Live Demo - Canlı Demo
 
@@ -23,19 +33,6 @@ These repositories contain other versions of the project:
 **Older Version / Eski Sürüm**: [Manga Çizgi Roman Çeviri V1](https://github.com/koesan/manga_cizgi_roman_ceviri_v1)
 
 ---
-
-</div>
-
-### Sample Results
-
-| Input | Output |
-|-------|---------|
-| ![Input 1](resimler/1.jpg) | ![Output 1](resimler/4.jpg) |
-| ![Input 2](resimler/2.jpg) | ![Output 2](resimler/5.jpg) |
-| ![Input 3](resimler/3.png) | ![Output 3](resimler/6.png) |
-
----
-<div align="center">
    
 🇬🇧[English](#english) | 🇹🇷[Türkçe](#türkçe)
 
