@@ -1,4 +1,4 @@
-# Manga Comic Colorization and Translation v2
+# Manga Comic Colorization and Translation v2: An AI-powered solution for manga and comic translation and colorization
 
 <div align="center">
 
@@ -9,7 +9,6 @@
 
 **An AI-powered solution for manga and comic translation and colorization**
 
-*Yapay zeka destekli manga ve çizgi roman çeviri ve renklendirme çözümü*
 ## 📎 Live Demo - Canlı Demo
 
 [![Hugging Face](https://img.shields.io/badge/🤗%20Hugging%20Face-Demo-yellow?style=for-the-badge&logo=huggingface&logoColor=white)](https://huggingface.co/spaces/koesan/mangaspaces)
